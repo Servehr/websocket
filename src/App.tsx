@@ -18,13 +18,7 @@ const options = {
   cluster: 'eu2',
   forceTLS: true,
   encrypted: true,
-  enabledTransports: ['ws', 'wss'],
-  authEndpoint: `https://scentsbyhoppey.com/api/broadcasting/auth`,
-   auth: {
-       headers: {
-          "Authorization": "Bearer TOKEN",
-      }
-   }
+  enabledTransports: ['ws', 'wss']
 };
 
 const echo = new Echo(options);
