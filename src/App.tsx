@@ -18,7 +18,12 @@ const options = {
   cluster: 'eu2',
   forceTLS: true,
   encrypted: true,
-  enabledTransports: ['ws', 'wss']
+  enabledTransports: ['ws', 'wss'],
+  authEndpoint: `https://scentsbyhoppey.com/api/broadcasting/auth`,
+   auth: {
+     headers: {
+        "Authorization": "Bearer TOKEN",
+    }
 };
 
 const echo = new Echo(options);
@@ -41,7 +46,7 @@ function App()
       e.preventDefault()
       const id: number = 8
       // alert(message);
-      return axios.post('http://127.0.0.1:8000/api/message', {
+      return axios.post('https://scentsbyhoppey.com/api/message', {
           id, title, message
       })
       .then(function (response) {
