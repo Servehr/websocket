@@ -21,9 +21,10 @@ const options = {
   enabledTransports: ['ws', 'wss'],
   authEndpoint: `https://scentsbyhoppey.com/api/broadcasting/auth`,
    auth: {
-     headers: {
-        "Authorization": "Bearer TOKEN",
-    }
+       headers: {
+          "Authorization": "Bearer TOKEN",
+      }
+   }
 };
 
 const echo = new Echo(options);
