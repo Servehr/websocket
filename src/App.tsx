@@ -16,7 +16,9 @@ const options = {
   wsPort: 6001,
   disableStats: true,
   cluster: 'eu2',
-  forceTLS: false,
+  forceTLS: true,
+  encrypted: true,
+  enabledTransports: ['ws', 'wss']
 };
 
 const echo = new Echo(options);
