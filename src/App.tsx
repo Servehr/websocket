@@ -11,8 +11,8 @@ window.Pusher = require('pusher-js')
 const options = {
   broadcaster: 'pusher',
   key: 'myKey',
-  wsHost: window.location.hostname+"/api/",
-  wssHost: window.location.hostname+"/api/",
+  wsHost: window.location.hostname,
+  wssHost: window.location.hostname,
   wsPort: 6001,
   disableStats: true,
   cluster: 'eu2',
