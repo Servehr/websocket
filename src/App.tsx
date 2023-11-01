@@ -11,8 +11,8 @@ window.Pusher = require('pusher-js')
 const options = {
   broadcaster: 'pusher',
   key: 'myKey',
-  wsHost: 'websocket-nqkh.onrender.com',
-  wssHost: 'websocket-nqkh.onrender.com',
+  wsHost: window.location.hostname,
+  wssHost: window.location.hostname,
   wsPort: 6001,
   disableStats: true,
   cluster: 'eu2',
