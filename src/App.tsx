@@ -12,13 +12,12 @@ const options = {
   broadcaster: 'pusher',
   key: 'myKey',
   wsHost: 'scentsbyhoppey.com',
-  wssHost: 'scentsbyhoppey.com',
   wsPort: 6001,
   disableStats: true,
   cluster: 'eu2',
   forceTLS: true,
   encrypted: true,
-  enabledTransports: ['ws', 'wss']
+  enabledTransports: ['wss']
 };
 
 const echo = new Echo(options);
